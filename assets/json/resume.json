@@ -1,6 +1,6 @@
 {
-  "basics": {
-    "name": "Albert Einstein",
+  "Basics": {
+    "name": "Chris Ziyi Yao",
     "label": "Scientist",
     "image": "",
     "email": "albert@einstein.de",
@@ -45,7 +45,7 @@
       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     }
   ],
-  "education": [
+  "Education": [
     {
       "institution": "University of Zurich, Zurich, Switzerland",
       "location": "Zurich, Switzerland",
@@ -111,7 +111,7 @@
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
-  "publications": [
+  "Publications": [
     {
       "name": "Zur Elektrody/namik bewegter Körper",
       "publisher": "Annalen der Physik",
@@ -149,19 +149,19 @@
       ]
     }
   ],
-  "languages": [
+  "Languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
-      "language": "English",
+      "language": "Chinese",
       "fluency": "Fluent",
       "icon": ""
     }
   ],
-  "interests": [
+  "Interests": [
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
@@ -175,7 +175,7 @@
       ]
     }
   ],
-  "references": [
+  "References": [
     {
       "name": "Professor John Doe",
       "icon": "fa-solid fa-laptop",
@@ -187,7 +187,7 @@
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     }
   ],
-  "projects": [
+  "Projects": [
     {
       "name": "Quantum Computing",
       "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
