@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Chris Ziyi Yao</title>
+  <meta name="description" content="About Chris Ziyi Yao - Academic background and research interests" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="topbar" role="navigation" aria-label="Primary">
+    <div class="nav">
+      <div class="brand"><a href="/">Chris Ziyi Yao</a></div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/cv.html">CV</a>
+        <a aria-current="page" href="/about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="/avatar.jpg" alt="Portrait of Chris Ziyi Yao" />
+      <div>
+        <h1>About Me</h1>
+        <div class="tag">Academic background and research interests</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <h2>Academic Background</h2>
+        <p>
+          I am a dedicated researcher with a passion for advancing knowledge in [your field]. 
+          My academic journey began with [your undergraduate degree] at [your university], 
+          where I developed a strong foundation in [relevant subjects].
+        </p>
+        <p>
+          Currently, I am pursuing my PhD at [your institution] under the supervision of 
+          [your supervisor's name]. My research focuses on [your research area], specifically 
+          investigating [specific research questions or problems].
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Research Interests</h2>
+        <div class="interests-grid">
+          <div class="interest-item">
+            <h3>[Primary Research Area]</h3>
+            <p>Description of your primary research focus and why it matters.</p>
+          </div>
+          <div class="interest-item">
+            <h3>[Secondary Research Area]</h3>
+            <p>Description of your secondary research interests and applications.</p>
+          </div>
+          <div class="interest-item">
+            <h3>[Methodological Focus]</h3>
+            <p>Description of the methods and approaches you use in your research.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Academic Philosophy</h2>
+        <p>
+          I believe that rigorous research should not only advance theoretical understanding 
+          but also contribute to practical solutions for real-world problems. My approach 
+          combines [your methodological approach] with [your theoretical framework] to 
+          address complex challenges in [your field].
+        </p>
+        <p>
+          As a PhD candidate, I am committed to maintaining the highest standards of 
+          academic integrity while fostering collaborative relationships with fellow 
+          researchers and practitioners in the field.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Future Goals</h2>
+        <p>
+          Upon completing my PhD, I aim to continue contributing to the academic community 
+          through [your post-PhD goals - e.g., postdoctoral research, faculty position, 
+          industry research]. I am particularly interested in [specific areas you want to 
+          explore further] and hope to establish myself as a leading researcher in [your field].
+        </p>
+      </section>
+
+      <section class="content-section">
+        <h2>Personal Interests</h2>
+        <p>
+          Beyond academia, I enjoy [your hobbies and interests]. These activities help me 
+          maintain a balanced perspective and often provide fresh insights that inform my 
+          research approach.
+        </p>
+      </section>
+    </main>
+
+    <footer>© <span id="y"></span> Chris Ziyi Yao · <span id="m"></span></footer>
+  </div>
+  <script>
+    const d = new Date();
+    document.getElementById('y').textContent = d.getFullYear();
+    document.getElementById('m').textContent = d.toLocaleDateString(undefined,{year:'numeric', month:'short'});
+  </script>
+</body>
+</html>

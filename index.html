@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chris Ziyi Yao — PhD Candidate</title>
+  <meta name="description" content="Academic portfolio and research profile of Chris Ziyi Yao" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="topbar" role="navigation" aria-label="Primary">
+    <div class="nav">
+      <div class="brand"><a href="/">Chris Ziyi Yao</a></div>
+      <div class="links">
+        <a aria-current="page" href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/cv.html">CV</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header class="hero">
+      <img class="avatar" src="/avatar.jpg" alt="Portrait of Chris Ziyi Yao" />
+      <div class="hero-content">
+        <h1>Chris Ziyi Yao</h1>
+        <div class="tag">PhD Candidate & Researcher</div>
+        <p class="hero-description">
+          Passionate about advancing knowledge through rigorous research and innovative thinking. 
+          Currently pursuing doctoral studies with a focus on [your research area].
+        </p>
+        <div class="hero-links">
+          <a href="/cv.html" class="btn btn-primary">Download CV</a>
+          <a href="/projects.html" class="btn btn-secondary">View Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>About Me</h2>
+        <p>
+          I am a dedicated researcher with a strong foundation in [your field]. 
+          My academic journey has been driven by curiosity and a commitment to 
+          contributing meaningful knowledge to my field.
+        </p>
+        <a href="/about.html" class="card-link">Learn more about my background →</a>
+      </section>
+
+      <section class="card">
+        <h2>Research Projects</h2>
+        <p>
+          Explore my research portfolio, including publications, ongoing projects, 
+          and academic collaborations that demonstrate my expertise and contributions 
+          to the field.
+        </p>
+        <a href="/projects.html" class="card-link">View my research →</a>
+      </section>
+
+      <section class="card">
+        <h2>Academic CV</h2>
+        <p>
+          Download my comprehensive academic CV, including education, publications, 
+          research experience, and professional achievements.
+        </p>
+        <a href="/cv.html" class="card-link">Download CV →</a>
+      </section>
+    </main>
+
+    <section class="contact-section">
+      <h2>Get in Touch</h2>
+      <div class="contact-links">
+        <a href="mailto:chris.yao20@imperial.ac.uk" class="contact-link">
+          <span class="contact-icon">✉️</span>
+          chris.yao20@imperial.ac.uk
+        </a>
+        <a href="https://github.com/chzyao" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">🐙</span>
+          GitHub Profile
+        </a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">📚</span>
+          Google Scholar
+        </a>
+      </div>
+    </section>
+
+    <footer>© <span id="y"></span> Chris Ziyi Yao · <span id="m"></span></footer>
+  </div>
+  <script>
+    const d = new Date();
+    document.getElementById('y').textContent = d.getFullYear();
+    document.getElementById('m').textContent = d.toLocaleDateString(undefined,{year:'numeric', month:'short'});
+  </script>
+</body>
+</html>
