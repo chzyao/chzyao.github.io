@@ -76,6 +76,43 @@ header {
   padding: 2rem 0;
 }
 
+.casual-header {
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+.header-content {
+  max-width: 100%;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.casual-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.profile-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.profile-text .tag {
+  font-size: 1.125rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -111,10 +148,11 @@ header {
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
   border: 4px solid #e2e8f0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -239,6 +277,66 @@ h1 {
   color: #64748b;
   margin-bottom: 1rem;
   line-height: 1.7;
+}
+
+/* Photo gallery */
+.photo-gallery-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.photo-gallery-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Special layout for cat photos - 3 columns when possible */
+.photo-gallery-section:has(.photo-item:nth-child(3)) .photo-gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .photo-gallery-section:has(.photo-item:nth-child(3)) .photo-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.photo-item {
+  text-align: center;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.02);
+}
+
+.photo-caption {
+  margin-top: 1rem;
+  color: #64748b;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
 /* Interests grid */
@@ -673,8 +771,35 @@ footer {
     gap: 1.5rem;
   }
 
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .casual-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-text h1 {
+    font-size: 2rem;
+  }
+
   h1 {
     font-size: 2rem;
+  }
+
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery-section:has(.photo-item:nth-child(3)) .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-item img {
+    height: 250px;
   }
 
   .grid {
@@ -731,5 +856,18 @@ footer {
 
   .preview-container iframe {
     height: 300px;
+  }
+
+  .photo-item img {
+    height: 200px;
+  }
+
+  .photo-gallery-section {
+    padding: 1.5rem;
+  }
+
+  .casual-avatar {
+    width: 130px;
+    height: 130px;
   }
 }
