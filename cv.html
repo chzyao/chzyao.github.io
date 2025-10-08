@@ -22,50 +22,38 @@
   </div>
 
   <div class="wrap">
-    <header>
-      <img class="avatar" src="/avatar.jpg" alt="Portrait of Chris Ziyi Yao" />
+    <!-- <header>
       <div>
-        <h1>Academic CV</h1>
-        <div class="tag">Download and contact information</div>
+        <h1>CV</h1>
+        <div class="tag">CV and Quick Overview</div>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="content-section">
-        <h2>Download CV</h2>
-        <div class="cv-download">
-          <a href="/CV_ChrisZiyiYao.pdf" class="btn btn-primary btn-large">
-            📄 Download Academic CV (PDF)
-          </a>
-          <p class="cv-note">
-            Last updated: <span id="cv-date"></span>
-          </p>
+        <h2>CV Preview</h2>
+        <div class="cv-preview">
+          <div class="preview-container">
+            <iframe 
+              src="/CV_CZYao.pdf" 
+              width="100%" 
+              height="600px"
+              frameborder="0"
+              title="CV Preview">
+              <p>Your browser doesn't support PDF preview. <a href="/CV_CZYao.pdf">Download the CV</a> to view it.</p>
+            </iframe>
+          </div>
+          <div class="preview-actions">
+            <a href="/CV_CZYao.pdf" class="btn btn-secondary btn-small" download>
+              📄 Download PDF
+            </a>
+            <p class="cv-note">
+              Last updated: <span id="cv-date"></span>
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="content-section">
-        <h2>Quick Overview</h2>
-        <div class="cv-summary">
-          <div class="summary-item">
-            <h3>Education</h3>
-            <p><strong>PhD Candidate</strong> - [Your Institution]<br>
-            <strong>[Degree]</strong> - [Your University]<br>
-            <strong>[Previous Degree]</strong> - [Previous University]</p>
-          </div>
-          <div class="summary-item">
-            <h3>Research Focus</h3>
-            <p>[Your primary research area]<br>
-            [Secondary research interests]<br>
-            [Methodological expertise]</p>
-          </div>
-          <div class="summary-item">
-            <h3>Key Achievements</h3>
-            <p>[Number] publications<br>
-            [Number] conference presentations<br>
-            [Awards/Grants received]</p>
-          </div>
-        </div>
-      </section>
 
       <section class="content-section">
         <h2>Contact Information</h2>
@@ -78,67 +66,16 @@
             </div>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">🐙</span>
+            <span class="contact-icon">🐈‍⬛</span>
             <div>
               <strong>GitHub</strong><br>
               <a href="https://github.com/chzyao" target="_blank" rel="noopener">github.com/chzyao</a>
             </div>
           </div>
-          <div class="contact-item">
-            <span class="contact-icon">📚</span>
-            <div>
-              <strong>Google Scholar</strong><br>
-              <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Scholar Profile</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">🏢</span>
-            <div>
-              <strong>Institution</strong><br>
-              [Your Department]<br>
-              [Your University]
-            </div>
-          </div>
         </div>
       </section>
 
-      <section class="content-section">
-        <h2>CV Sections</h2>
-        <div class="cv-sections">
-          <div class="section-item">
-            <h3>Education</h3>
-            <p>Complete academic background including degrees, institutions, and relevant coursework.</p>
-          </div>
-          <div class="section-item">
-            <h3>Research Experience</h3>
-            <p>Detailed research projects, positions, and contributions to the field.</p>
-          </div>
-          <div class="section-item">
-            <h3>Publications</h3>
-            <p>Peer-reviewed articles, conference papers, and other academic publications.</p>
-          </div>
-          <div class="section-item">
-            <h3>Presentations</h3>
-            <p>Conference presentations, seminars, and invited talks.</p>
-          </div>
-          <div class="section-item">
-            <h3>Teaching Experience</h3>
-            <p>Courses taught, TA positions, and mentoring experience.</p>
-          </div>
-          <div class="section-item">
-            <h3>Awards & Honors</h3>
-            <p>Academic awards, scholarships, and recognition received.</p>
-          </div>
-          <div class="section-item">
-            <h3>Professional Activities</h3>
-            <p>Committee memberships, editorial work, and professional service.</p>
-          </div>
-          <div class="section-item">
-            <h3>Skills</h3>
-            <p>Technical skills, programming languages, and research methodologies.</p>
-          </div>
-        </div>
-      </section>
+      
     </main>
 
     <footer>© <span id="y"></span> Chris Ziyi Yao · <span id="m"></span></footer>

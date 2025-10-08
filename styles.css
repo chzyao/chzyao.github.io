@@ -456,8 +456,39 @@ h1 {
   border: 2px dashed #cbd5e1;
 }
 
-.cv-note {
+.cv-preview {
   margin-top: 1rem;
+}
+
+.preview-container {
+  background: #f8fafc;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.preview-container iframe {
+  display: block;
+  border: none;
+}
+
+.preview-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.cv-note {
+  margin: 0;
   color: #64748b;
   font-size: 0.875rem;
 }
@@ -669,6 +700,16 @@ footer {
   .cv-sections {
     grid-template-columns: 1fr;
   }
+
+  .preview-container iframe {
+    height: 400px;
+  }
+
+  .preview-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -686,5 +727,9 @@ footer {
 
   .card {
     padding: 1.5rem;
+  }
+
+  .preview-container iframe {
+    height: 300px;
   }
 }
