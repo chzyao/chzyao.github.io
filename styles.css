@@ -279,65 +279,23 @@ h1 {
   line-height: 1.7;
 }
 
-/* Photo gallery */
-.photo-gallery-section {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  border: 1px solid #e2e8f0;
-  margin: 2rem 0;
-}
-
-.photo-gallery-section h2 {
+/* Larger font for About Me section */
+.content-section h2 {
   font-size: 2rem;
   font-weight: 600;
   color: #1e293b;
-  margin-bottom: 2rem;
-  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-/* Special layout for cat photos - 3 columns when possible */
-.photo-gallery-section:has(.photo-item:nth-child(3)) .photo-gallery {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-@media (max-width: 900px) {
-  .photo-gallery-section:has(.photo-item:nth-child(3)) .photo-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.photo-item {
-  text-align: center;
-}
-
-.photo-item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.photo-item img:hover {
-  transform: scale(1.02);
-}
-
-.photo-caption {
-  margin-top: 1rem;
+.content-section p {
+  font-size: 1.125rem;
   color: #64748b;
-  font-style: italic;
-  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
 }
+
+
+
 
 /* Interests grid */
 .interests-grid {
