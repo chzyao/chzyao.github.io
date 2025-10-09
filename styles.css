@@ -115,11 +115,19 @@ header {
 
 .hero {
   display: flex;
-  align-items: center;
-  gap: 3rem;
+  align-items: flex-start;
+  gap: 2rem;
   margin: 3rem 0;
   padding: 3rem 0;
   min-height: 60vh;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
 }
 
 .hero-content {
@@ -135,7 +143,7 @@ header {
 }
 
 .hero-description {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   color: #64748b;
   margin: 1.5rem 0;
   max-width: 600px;
@@ -143,8 +151,48 @@ header {
 
 .hero-links {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
   margin-top: 2rem;
+}
+
+.hero-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.125rem;
+  transition: color 0.2s;
+}
+
+.hero-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.contact-section {
+  margin-top: 3rem;
+}
+
+.contact-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.contact-info a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
 .avatar {
@@ -683,12 +731,46 @@ h1 {
 
 /* Footer */
 footer {
-  text-align: center;
   padding: 3rem 0;
   color: #64748b;
   border-top: 1px solid #e2e8f0;
   margin-top: 4rem;
 }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.footer-contact p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+  color: #374151;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -712,6 +794,10 @@ footer {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+  }
+
+  .hero-left {
+    align-items: center;
   }
 
   .hero h1 {
@@ -784,6 +870,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
+
   .preview-container iframe {
     height: 400px;
   }
@@ -801,7 +888,7 @@ footer {
   }
 
   .hero-description {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   .content-section {
