@@ -113,6 +113,10 @@ header {
   font-weight: 500;
 }
 
+.report-header-actions {
+  margin-bottom: 2rem;
+}
+
 .hero {
   display: flex;
   align-items: flex-start;
@@ -385,6 +389,11 @@ h1 {
   font-weight: 500;
 }
 
+.project-institution {
+  color: #2563eb;
+  font-weight: 500;
+}
+
 .project-year {
   color: #64748b;
 }
@@ -424,6 +433,45 @@ h1 {
 
 .project-link:hover {
   text-decoration: underline;
+}
+
+/* Project report preview */
+.project-report {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.project-report h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.report-preview {
+  margin-top: 1rem;
+}
+
+.report-preview .preview-container {
+  background: #f8fafc;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.report-preview .preview-container iframe {
+  display: block;
+  border: none;
+}
+
+.report-preview .preview-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 /* Publications */
@@ -846,6 +894,10 @@ footer {
     height: 250px;
   }
 
+  .report-preview .preview-container iframe {
+    height: 400px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -900,6 +952,10 @@ footer {
   }
 
   .preview-container iframe {
+    height: 300px;
+  }
+
+  .report-preview .preview-container iframe {
     height: 300px;
   }
 
