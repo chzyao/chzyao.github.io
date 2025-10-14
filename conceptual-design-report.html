@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conceptual Design Report — Chris Ziyi Yao</title>
+  <meta name="description" content="Conceptual Design of a Regional Airliner Jet Project Report by Chris Ziyi Yao" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="topbar" role="navigation" aria-label="Primary">
+    <div class="nav">
+      <div class="brand"><a href="/">Chris Ziyi Yao</a></div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/cv.html">CV</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="report-header-actions">
+          <a href="/projects.html" class="btn btn-primary btn-large">
+            ← Back to Projects
+          </a>
+        </div>
+        <h1>Conceptual Design of a Regional Airliner Jet</h1>
+      </div>
+    </header>
+
+    <main>
+    <section class="content-section">
+        <h2>Project Poster</h2>
+        <div class="cv-preview">
+            <div class="preview-container">
+            <iframe 
+                src="/Conceptual_Design_Poster_FinalVersion.pdf#toolbar=0&navpanes=0&scrollbar=1" 
+                width="100%" 
+                height="800px"
+                frameborder="0"
+                title="Conceptual Design Poster Preview">
+                <p>Your browser doesn't support PDF preview. <a href="/Conceptual_Design_Poster_FinalVersion.pdf">Download the poster</a> to view it.</p>
+            </iframe>
+            </div>
+            <div class="preview-actions">
+            <a href="/Conceptual_Design_Poster_FinalVersion.pdf" class="btn btn-secondary btn-large" download>
+                📄 Download Poster PDF
+            </a>
+            </div>
+        </div>
+        </section>
+
+
+      <section class="content-section">
+        <h2>Project Report</h2>
+        <div class="cv-preview">
+          <div class="preview-container">
+            <iframe 
+              src="/Group_1_AVD_Project__Conceptual_Design.pdf#toolbar=0&navpanes=0&scrollbar=1" 
+              width="100%" 
+              height="800px"
+              frameborder="0"
+              title="Conceptual Design Report Preview">
+              <p>Your browser doesn't support PDF preview. <a href="/Group_1_AVD_Project__Conceptual_Design.pdf">Download the report</a> to view it.</p>
+            </iframe>
+          </div>
+          <div class="preview-actions">
+            <a href="/Group_1_AVD_Project__Conceptual_Design.pdf" class="btn btn-secondary btn-large" download>
+              📄 Download Report PDF
+            </a>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="content-section">
+        <h2>Project Overview</h2>
+        <p>
+          Our group designed a 90-passenger regional jet for multi-leg domestic routes in New Zealand, developed in accordance with FAR 25 requirements. The project involved complete conceptual sizing of the aircraft — including aerodynamics, propulsion integration, systems layout, and performance evaluation.
+        </p>
+        <p>
+          I was responsible for the fuselage design, undercarriage configuration, and aerodynamic drag estimation. This included cabin layout optimisation for safety and comfort standards, geometric sizing of the empennage and cockpit, positioning and sizing of landing gear to ensure clearance and stability, and calculation of component drag contributions using the component build-up method.
+        </p>
+        
+        <div class="project-meta">
+          <span class="project-institution">Department of Aeronautics, Imperial College London</span>
+          <span class="project-year">October 2022 - December 2022</span>
+        </div>
+        
+        <div class="project-tags">
+          <span class="tag">Aircraft Design</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">CAD</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <p>Contact Me</p>
+          <div class="contact-links">
+            <a href="mailto:chris.yao20@imperial.ac.uk">chris.yao20@imperial.ac.uk</a>
+            <a href="https://github.com/chzyao" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          © <span id="y"></span> Chris Ziyi Yao · <span id="m"></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const d = new Date();
+    document.getElementById('y').textContent = d.getFullYear();
+    document.getElementById('m').textContent = d.toLocaleDateString(undefined,{year:'numeric', month:'short'});
+  </script>
+</body>
+</html>
