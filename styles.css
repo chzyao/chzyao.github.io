@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
@@ -472,6 +476,48 @@ h1 {
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
+}
+
+/* Table of Contents */
+.toc {
+  margin: 1.5rem 0;
+}
+
+.toc-section {
+  margin-bottom: 2rem;
+}
+
+.toc-section:last-child {
+  margin-bottom: 0;
+}
+
+.toc h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.toc-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toc a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+  padding: 0.25rem 0;
+}
+
+.toc a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
 }
 
 /* Publications */
