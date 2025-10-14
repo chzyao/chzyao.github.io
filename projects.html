@@ -30,6 +30,47 @@
     </header>
 
     <main>
+
+      <section class="content-section">
+        <h2>Research Projects</h2>
+        <div class="project-card">
+          <h3>RePLay: A Library for In-Memory Checkpointing for Performant Resilience</h3>
+          <div class="project-meta">
+            <span class="project-institution">Department of Aeronautics, Imperial College London</span>
+            <span class="project-year">October 2023 - Present (Medical leave: February 2024 - September 2025)</span>
+          </div>
+          <p class="project-description">
+            My ongoing MEng thesis project addresses the vulnerability of large-scale time-dependent solvers to node failures that can cause complete computation loss. Traditional disk-based checkpointing creates severe I/O bottlenecks and energy inefficiencies at exascale, where millions of processes must synchronise.
+          </p>
+
+          <p class="project-description">
+            I am developing RePLay, a minimally intrusive in-memory checkpointing library written in C that leverages Open MPI's User-level Fault Mitigation (ULFM) framework. The library provides lightweight resilience while reducing disk I/O overheads through "erasure-coding parity" and "process-duplication" schemes, enabling automatic data recovery without full application restarts.
+          </p>
+
+          <p class="project-description">
+            RePLay transparently intercepts MPI communications to rebuild distributed data structures from prior message exchanges, supports dynamic communicator reconstruction, and provides a disk-based fallback when spare processes are exhausted.
+          </p>
+
+          <p class="project-description">
+            Current work focuses on energy efficiency and scalability. We are testing the hypotheses that (1) in-memory schemes will consume less energy due to reduced I/O operations, (2) online recovery will achieve faster time-to-solution despite higher memory use, and (3) energy efficiency will scale more effectively with problem size for in-memory schemes.
+          </p>
+
+          <p class="project-description">
+            The next phase will involve integrating RePLay with the Nektar++ CFD framework to evaluate runtime overhead, recovery performance, and energy-to-solution metrics. Current efforts are centred on developing the core checkpointing infrastructure, verifying fault recovery on small MPI test cases, and preparing the library for large-scale solver coupling.
+          </p>
+
+
+          <div class="project-tags">
+            <span class="tag">High-Performance Computing</span>
+            <span class="tag">Fault Tolerance</span>
+            <span class="tag">Parallel Numerical Solvers</span>
+            <span class="tag">C/C++</span>
+          </div>
+        
+      </section>
+
+
+
       <section class="content-section">
         <h2>Publications</h2>
         <div class="publication-item">
@@ -43,13 +84,6 @@
             We propose a two-scale neural network method for solving partial differential equations (PDEs) with small parameters using physics-informed neural networks (PINNs). We directly incorporate the small parameters into the architecture of neural networks. The proposed method enables solving PDEs with small parameters in a simple fashion, without adding Fourier features or other computationally taxing searches of truncation parameters. Various numerical examples demonstrate reasonable accuracy in capturing features of large derivatives in the solutions caused by small parameters.
           </p>
 
-          <div class="project-tags">
-            <span class="tag">Numerical Analysis</span>
-            <span class="tag">Machine Learning</span>
-            <span class="tag">PDE</span>
-          </div>
-
-
           <div class="publication-links">
             <a href="/10_4208_cicp_OA_2024_0040.pdf" class="btn btn-primary" target="_blank">View PDF</a>
           </div>
@@ -59,8 +93,6 @@
           </div>
         </div>
       </section>
-
-
 
 
 
