@@ -514,6 +514,27 @@ h1 {
   text-decoration: underline;
 }
 
+.publication-doi {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.publication-doi p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.publication-doi a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.publication-doi a:hover {
+  text-decoration: underline;
+}
+
 /* Presentations */
 .presentation-item {
   background: white;
