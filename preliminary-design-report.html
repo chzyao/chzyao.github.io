@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preliminary and Detailed Design Report — Chris Ziyi Yao</title>
+  <meta name="description" content="Preliminary and Detailed Design of a Regional Airliner Jet Project Report by Chris Ziyi Yao" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="topbar" role="navigation" aria-label="Primary">
+    <div class="nav">
+      <div class="brand"><a href="/">Chris Ziyi Yao</a></div>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/cv.html">CV</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="report-header-actions">
+          <a href="/projects.html" class="btn btn-primary btn-large">
+            ← Back to Projects
+          </a>
+        </div>
+        <h1>Preliminary and Detailed Design of a Regional Airliner Jet</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-section">
+        <h2>Project Report</h2>
+        <div class="cv-preview">
+          <div class="preview-container">
+            <iframe 
+              src="/Group_1_AVD_Project__Preliminary_and_Detailed_Design_.pdf#toolbar=0&navpanes=0&scrollbar=1" 
+              width="100%" 
+              height="800px"
+              frameborder="0"
+              title="Preliminary and Detailed Design Report Preview">
+              <p>Your browser doesn't support PDF preview. <a href="/Group_1_AVD_Project__Preliminary_and_Detailed_Design_.pdf">Download the report</a> to view it.</p>
+            </iframe>
+          </div>
+          <div class="preview-actions">
+            <a href="/Group_1_AVD_Project__Preliminary_and_Detailed_Design_.pdf" class="btn btn-secondary btn-large" download>
+              📄 Download Report PDF
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <h2>Project Overview</h2>
+        <p>
+          This project followed the conceptual design of a 90-passenger regional jet and focused on the structural design and analysis of its primary airframe components — wings, fuselage, and empennage — under multiple load cases, including symmetric flight, One-engine-inoperative (OEI), and nose-off landing. Our team developed analytical models for shear, bending, and torsion, optimised component weight and stiffness, and evaluated composite versus metallic configurations for manufacturability and fatigue resistance.
+        </p>
+        <p>
+          I was responsible for the fuselage structural design, including the sizing of skin, stringers, and frames under pressurisation and bending loads. My work involved deriving load distributions, performing buckling and stability checks using analytical and numerical methods, and conducting material selection and optimisation through CES EduPack (now known as Ansys Granta EduPack) and MATLAB.
+        </p>
+        
+        <div class="project-meta">
+          <span class="project-institution">Department of Aeronautics, Imperial College London</span>
+          <span class="project-year">January 2023 - March 2023</span>
+        </div>
+        
+        <div class="project-tags">
+          <span class="tag">Aircraft Design</span>
+          <span class="tag">Structural Design</span>
+          <span class="tag">Materials Selection</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">ABAQUS</span>
+          <span class="tag">Ansys Granta EduPack</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <p>Contact Me</p>
+          <div class="contact-links">
+            <a href="mailto:chris.yao20@imperial.ac.uk">chris.yao20@imperial.ac.uk</a>
+            <a href="https://github.com/chzyao" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          © <span id="y"></span> Chris Ziyi Yao · <span id="m"></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const d = new Date();
+    document.getElementById('y').textContent = d.getFullYear();
+    document.getElementById('m').textContent = d.toLocaleDateString(undefined,{year:'numeric', month:'short'});
+  </script>
+</body>
+</html>
