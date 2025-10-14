@@ -30,7 +30,6 @@
     </header>
 
     <main>
-
       <section class="content-section">
         <h2>Research Projects</h2>
         <div class="project-card">
@@ -66,32 +65,58 @@
             <span class="tag">Parallel Numerical Solvers</span>
             <span class="tag">C/C++</span>
           </div>
-        
-      </section>
+        </div>
 
-
-
-      <section class="content-section">
-        <h2>Publication</h2>
-        <div class="publication-item">
-          <h3>Two-Scale Neural Networks for Partial Differential Equations with Small Parameters</h3>
-          <div class="publication-meta">
-            <span class="publication-authors">Qiao Zhuang, Chris Ziyi Yao, Zhongqiang Zhang, and George Em Karniadakis</span>
-            <span class="publication-venue">Communications in Computational Physics <span class="publication-year"> (2025)</span></span>
+      
+        <div class="project-card">
+          <h3>Physics-Informed Neural Networks (PINNs) for Multiscale PDEs</h3>
+          <div class="project-meta">
+            <span class="project-institution">Division of Applied Mathematics, Brown University</span>
+            <span class="project-year">July 2023 - September 2023</span>
           </div>
-          <p class="publication-abstract">
-            We propose a two-scale neural network method for solving partial differential equations (PDEs) with small parameters using physics-informed neural networks (PINNs). We directly incorporate the small parameters into the architecture of neural networks. The proposed method enables solving PDEs with small parameters in a simple fashion, without adding Fourier features or other computationally taxing searches of truncation parameters. Various numerical examples demonstrate reasonable accuracy in capturing features of large derivatives in the solutions caused by small parameters.
+          <p class="project-description">
+            we worked on overcoming the spectral-bias limitation of conventional Physics-Informed Neural Networks (PINNs), which struggle to capture steep boundary layers in singularly perturbed PDEs (𝜀 ≪ 1).
           </p>
 
-          <div class="publication-links">
-            <a href="/10_4208_cicp_OA_2024_0040.pdf" class="btn btn-primary" target="_blank">View PDF</a>
+          <p class="project-description">
+            We developed a Two-Scale Neural Network architecture that embeds the small-scale parameter 𝜀 directly into the network inputs, enabling accurate resolution of multiscale features without relying on Fourier features or auxiliary equations.
+          </p>
+
+          <p class="project-description">
+            I validated the model on one-dimensional test cases down to 𝜀 = 10⁻⁵, successfully reproducing sharp transition layers that standard PINNs fail to capture. In a related exploratory study, I analysed information flow during training using Information-Bottleneck metrics, quantifying signal-to-noise behaviour in adaptive-weight and residual-attention mechanisms to study feature compression and generalisation.
+          </p>
+
+          <p class="project-description">
+            This work led to a co-authored publication in <em>Communications in Computational Physics</em>. 
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">Scientific Machine Learning</span>
+            <span class="tag">Physics-Informed Neural Networks</span>
+            <span class="tag">Numerical Analysis</span>
+            <span class="tag">Multiscale Problems</span>
           </div>
 
-          <div class="publication-doi">
-            <p><strong>DOI:</strong> <a href="https://doi.org/10.4208/cicp.OA-2024-0040" target="_blank">10.4208/cicp.OA-2024-0040</a></p>
-          </div>
+           <div class="publication-item">
+             <p class="publication-citation">
+              Qiao Zhuang, Chris Ziyi Yao, Zhongqiang Zhang, and George Em Karniadakis. "Two-Scale Neural Networks for Partial Differential Equations with Small Parameters." <em>Communications in Computational Physics</em> 38, no. 3 (2025): 603-629.
+             </p>
+   
+             <div class="publication-links">
+               <a href="/10_4208_cicp_OA_2024_0040.pdf" class="btn btn-primary" target="_blank">View PDF</a>
+             </div>
+   
+             <div class="publication-doi">
+               <p><strong>DOI:</strong> <a href="https://doi.org/10.4208/cicp.OA-2024-0040" target="_blank">10.4208/cicp.OA-2024-0040</a></p>
+             </div>
+           </div>
+
+
         </div>
+
       </section>
+
+
 
 
 

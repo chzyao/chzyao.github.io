@@ -504,10 +504,11 @@ h1 {
   display: inline;
 }
 
-.publication-abstract {
+.publication-citation {
   color: #64748b;
   margin-bottom: 1rem;
   line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .publication-links {
